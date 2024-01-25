@@ -43,6 +43,10 @@ console.log(result2);
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+
+
+
+/*
 function crazyDiff (numb1){
     const difAbs = numb1 !== 19;
     
@@ -56,19 +60,26 @@ function crazyDiff (numb1){
    return difAbs; 
 }
 
-const min = 20;
+const min = 19;
 const max = 50;
 
 const difAbsResult = crazyDiff(Math.random() * (max - min + 1) + min);
 console.log(difAbsResult);
+/*
+
 
 
 /* ESERCIZIO 4
- Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
- se n è uguale a 400.
+ Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è 
+ compreso tra 20 e 100 (incluso) oppure se n è uguale a 400.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function boundary(n){
+    if(n => 20 && n <= 100 || n === 400);
+
+
+}
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -77,6 +88,22 @@ console.log(difAbsResult);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function epify (stringa){
+    const parole = stringa.split(" ");
+    parole [0];
+    console.log(parole);
+
+    if(parole[0] === "EPICODE"){
+        return stringa;
+    }else{
+        return "EPICODE" + stringa;
+    }
+
+}
+
+const testo = 
+
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
