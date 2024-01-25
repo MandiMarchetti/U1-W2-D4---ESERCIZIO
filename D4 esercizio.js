@@ -43,19 +43,20 @@ console.log(result2);
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function crazyDiff (num1){
-    let diffAssoluta = Math.floor(Math.random() * 19);
-    console.log (diffAssoluta);
-
-    if(num1 > 19){
-        diffAssoluta*=3;
-    }else{
-        console.log("questo è minore di 19! Non va bene!")
-    }
+function crazyDiff (numb1){
+    const difAbs = numb1 !== 19;
     
-    return diffAssoluta;
+    if(difAbs > 19){
+        return difAbs;
+    }
+
 }
 
+const min = 20;
+const max = 50;
+
+const difAbsResult = crazyDiff(Math.floor(Math.random() * (max - min + 1)) + min);
+console.log(difAbsResult);
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
